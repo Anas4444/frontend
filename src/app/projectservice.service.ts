@@ -9,6 +9,6 @@ export class ProjectserviceService {
   constructor(private _http:HttpClient) { }
 
   get_projects() {
-    return this._http.get('http://localhost:8081/jcibardo/api/project');
+    return this._http.get('http://localhost:8082/jcibardo/api/project');
   }
 }
