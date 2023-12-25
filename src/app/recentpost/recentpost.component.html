@@ -1,0 +1,9 @@
+<div class="mb-5 wow slideInUp" data-wow-delay="0.1s">
+    <div class="section-title section-title-sm position-relative pb-3 mb-4">
+        <h3 class="mb-0">Recent</h3>
+    </div>
+    <div class="d-flex rounded overflow-hidden mb-3" *ngFor="let recent of recents">
+        <img class="img-fluid" [src]="recent.img" style="width: 100px; height: 100px; object-fit: cover;" alt="">
+        <a class="h5 fw-semi-bold d-flex align-items-center bg-light px-3 mb-0 cursor-pointer" (click)="navigateTo('/detail', recent.id)">{{recent.titre}}</a>
+    </div>
+</div>

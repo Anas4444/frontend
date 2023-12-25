@@ -1,0 +1,29 @@
+<div class="container-fluid position-relative p-0">
+    <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+        <a href="index.html" class="navbar-brand p-0">
+    
+            <h1 class="m-0">
+                
+            <i>JCI BARDO</i><img id="logo-jci" src="./assets/img/jjjj-removebg-preview.png">
+        </h1>
+    
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0">
+                <a (click)="navigateTo('/', '#header')" id="home" class="nav-item nav-link active cursor-pointer">Acceuil</a>
+                <a (click)="navigateTo('/about', '#top')" id="about" class="nav-item nav-link cursor-pointer">A propos</a>
+                <a (click)="navigateTo('/programmes', '#top')" id="programmes" class="nav-item nav-link cursor-pointer">Programmes</a>
+                <div class="nav-item dropdown">
+                    <a href="#" id="blog" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Blog</a>
+                    <div class="dropdown-menu m-0">
+                        <a (click)="navigateTo('/detail', '#top')" id="detail" class="dropdown-item cursor-pointer">Blog Detail</a>
+                        <a (click)="navigateTo('/grid', '#top')" id="grid" class="dropdown-item cursor-pointer">Blog Grid</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
