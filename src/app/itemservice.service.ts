@@ -9,6 +9,6 @@ export class ItemserviceService {
   constructor(private _http:HttpClient) { }
 
   get_items() {
-    return this._http.get('http://localhost:8081/jcibardo/api/item');
+    return this._http.get('http://localhost:8082/jcibardo/api/item');
   }
 }
